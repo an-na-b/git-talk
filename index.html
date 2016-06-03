@@ -4,10 +4,10 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Jugendhackt Süd - Github</title>
+        <title>Jugendhackt West - Github</title>
 
-        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-        <meta name="author" content="Hakim El Hattab">
+        <meta name="description" content="Einf&uuml;hrung in Github">
+        <meta name="author" content="Daniel Mies">
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -50,44 +50,29 @@
                     <h1>Github</h1>
                     <h3>Gemeinsam mit Code die Welt verbessern</h3>
                     <p>
-                        <small>Christian van Onzenoodt ● <a href="https://github.com/onc">github.com/onc</a></small>
+                        <small>Daniel Mies <a href="https://github.com/dmies">github.com/dmies</a></small>
                     </p>
-                    <aside class="notes">
-                        <p>
-                            Fragen
-                        </p>
-                        <p>
-                            Wer kennt github?
-                        </p>
-                        <p>
-                            Hat mal was herrunter/hoch geladen?
-                        </p>
-                    </aside>
                 </section>
 
                 <section>
                     <h2>Was ist Github?</h2>
                     <ul>
                         <li>Möglichkeit gemeinsam an Code zu arbeiten</li>
-                        <li>Soziales Netzwerk</li>
-                        <li>Webhoster für Git</li>
+                        <li class="fragment">Soziales Netzwerk</li>
+                        <li class="fragment">Webhoster für Git</li>
                     </ul>
-                    <aside class="notes">
-                    </aside>
                 </section>
 
                 <section>
                     <h3>Wer ist so auf GitHub?</h3>
                     <ul>
                         <li><a href="https://github.com/twbs/bootstrap">twbs/bootstrap</a></li>
-                        <li><a href="https://github.com/joyent/node">joyent/node (nodejs)</a></li>
+                        <li><a href="https://github.com/nodejs/node">nodejs/node</a></li>
                         <li><a href="https://github.com/jquery/jquery">jquery/jquery</a></li>
                         <li><a href="https://github.com/rails/rails">rails/rails</a></li>
                         <li><a href="https://github.com/facebook/react">facebook/react</a></li>
                         <li><a href="https://github.com/django/django">django/django</a></li>
                         <li><a href="https://github.com/angular/angular.js">angular/angular.js</a></li>
-                        <li><a href="https://github.com/adobe/brackets">adobe/brackets</a></li>
-                        <li><a href="https://github.com/zurb/foundation">zurb/foundation</a></li>
                     </ul>
                 </section>
 
@@ -104,52 +89,92 @@
                     <img class="none-border" data-src="images/versionierung.png">
                 </section>
 
+
                 <section>
-                    <h2>Wie bedient man das denn?</h2>
+                  <h2>Installation</h2>
 
-                    <p class="fragment" data-autoslide="1">
-                        Kopie auf den eigenen Rechner laden
-                    </p>
-                    <pre class="fragment"><code class="shell" data-trim>
-$ git clone https://github.com/...
-                    </code></pre>
-
-                    <p class="fragment" data-autoslide="1">
-                        Dateien zum Index hinzufügen
-                    </p>
-                    <pre class="fragment"><code class="shell" data-trim>
-$ git add readme.md
-                    </code></pre>
-
-                    <p class="fragment" data-autoslide="1">
-                        Commit mit Nachricht abschließen
-                    </p>
-                    <pre class="fragment"><code class="shell" data-trim>
-$ git commit -m "readme bearbeitet"
-                    </code></pre>
-
-                    <p class="fragment" data-autoslide="1">
-                        Veränderungen auf den Server laden
-                    </p>
-                    <pre class="fragment"><code class="shell" data-trim>
-$ git push origin master
-                    </code></pre>
+                  <ul>
+                    <li><a href="https://git-scm.com/download/win">Windows</a></li>
+                    <li><a href="https://git-scm.com/download/mac">Max OSX</a></li>
+                    <li>Linux - Wie immer im Paket-Manager ;)</li>
+                  </ul>
                 </section>
 
                 <section>
-                    <h2>Wichtig!</h2>
+                  <h2>Ein Repository erstellen</h2>
+                  <p>
+                    In dem Verzeichnis, welches Du mit git verwalten möchtest, <code class="shell" data-trim>git init</code> ausführen.
+                  </p>
 
-                    <span class="fragment">
-                        <p>
-                            Bevor die Arbeit los geht einmal
-                        </p>
-                        <pre><code class="shell" data-trim>
+                </section>
+
+                <section>
+                  <h2>Ein Repository auschecken</h2>
+                  <p>
+                    Du kannst ein Repository auschecken, welches in einem Ordner liegt
+                  </p>
+                  <pre><code class="shell" data-trim>
+$ git clone /pfad/zum/repository
+                  </code></pre>
+                  <p>
+                    Oder ein Repository auch direkt auschecken
+                  </p>
+                  <pre><code class="shell" data-trim>
+$ git clone benutzername@host:/pfad/zum/repository
+                  </code></pre>
+                </section>
+
+
+                <section>
+                  <h2>Workflow</h2>
+                  <div class="fragment">
+                    <p>
+                      Wenn Du Dateien geändert hast, musst Du diese zunächst zum <b>Index</b> hinzufügen damit git diese verwaltet
+                    </p>
+                    <pre><code class="shell" data-trim>
+$ git add meine-datei.txt
+$ git add *
+                    </code></pre>
+                  </div>
+                  <div class="fragment">
+                    <p>
+                      Danach kannst Du die Datei(en) zum <b>HEAD</b> hinzufügen (quasi die Änderung bestätigen):
+                    </p>
+                    <pre><code class="shell" data-trim>
+$ git commit -m "meine commit Nachricht"
+                    </code></pre>
+                    </div>
+                  <div class="fragment">
+                    <p>
+                      Zu einem Commit gehört <b>immer</b> eine Nachricht in der die Änderungen kurz beschrieben werden.
+                    </p>
+                  </div>
+                </section>
+
+                <section>
+                  <h2>Änderungen hochlden</h2>
+                  <p>
+                    Damit auch andere Deine Änderungen sehen und bearbeiten können, musst Du sie nur noch hochladen:
+                  </p>
+                  <pre><code class="shell" data-trim>
+$ git push origin master
+                  </code></pre>
+                  <p class="fragment">
+                    Was <i>origin</i> und <i>master</i> bedeuten, sehen wir uns später noch an. :-)
+                  </p>
+                </section>
+
+                <section>
+                  <h2>Änderungen aus dem Repository laden</h2>
+                  <p>
+                    Wenn Du alle Änderungen laden möchtest, musst Du diese <i>pullen</i>
+                  </p>
+                  <pre><code class="shell" data-trim>
 $ git pull
-                        </code></pre>
-                        <p>
-                            Um den aktuellen Stand zu bekommen
-                        </p>
-                    </span>
+                  </code></pre>
+                  <p class="fragment">
+                    Bevor ihr etwas pusht, solltet ihr immer vorher pullen. Sonst kann es zu Konflikten kommen.
+                  </p>
                 </section>
 
                 <section>
@@ -165,87 +190,8 @@ $ git status
                 </section>
 
                 <section>
-                    <h2>Tipps für GitHub</h2>
-                </section>
+                    <h2>Git kann noch viel mehr</h2>
 
-                <section>
-                    <h2>Readme</h2>
-                    <p>
-                        Zeige was du machst und wie es bedient wird
-                    </p>
-
-                    <pre><code class="md" data-trim>
-# Das ist unser tolles Projekt
-
-Es kann Einhörner auf Regenbögen tanzen lassen.
-Wenn du es benutzen willst, dann mach das:
-
-* lade es dir runter
-* führe die Datei `program` aus
-
-Wenn ein Fehler kommt, dann schau mal [hier](http://hilfe.de)
-                    </code></pre>
-
-                    <p>
-                        <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">
-                            <small>Markdown Spickzettel</small>
-                        </a>
-                    </p>
-                </section>
-
-                <section>
-                    <h2>Wähle eine Lizenz für dein Projekt</h2>
-                    <table>
-                        <tr>
-                            <th></th>
-                            <th>MIT Lizenz (Expat)</th>
-                            <th>GNU General Public License v2.0 (GPL)</th>
-                        </tr>
-                        <tr>
-                            <td>einsehen</td>
-                            <td class="green-color">✓</td>
-                            <td class="green-color">✓</td>
-                        </tr>
-                        <tr>
-                            <td>verwenden</td>
-                            <td class="green-color">✓</td>
-                            <td class="green-color">✓</td>
-                        </tr>
-                        <tr>
-                            <td>kopieren</td>
-                            <td class="green-color">✓</td>
-                            <td class="green-color">✓</td>
-                        </tr>
-                        <tr>
-                            <td>verändern</td>
-                            <td class="green-color">✓</td>
-                            <td class="green-color">✓</td>
-                        </tr>
-                        <tr class="fragment">
-                            <td>copyleft</td>
-                            <td class="red-color">✗</td>
-                            <td class="green-color">✓</td>
-                        </tr>
-                    </table>
-
-                </section>
-
-                <section>
-                    <h2>Klingt cool! würde ich gerne ausprobieren</h2>
-
-                    <p>
-                        <a href="https://git-scm.com/download/win">Windows</a>
-                    </p>
-                    <p>
-                        <a href="https://git-scm.com/download/mac">Max OSX</a>
-                    </p>
-                    <p>
-                        Linux - Wie immer im Paket-Manager ;)
-                    </p>
-                </section>
-
-                <section>
-                    <h2>Gibt es da noch mehr?</h2>
                     <p>Anfänger:
                         <a href="https://rogerdudler.github.io/git-guide/index.de.html">git - Der einfache Einstieg</a>
                     </p>
@@ -259,14 +205,13 @@ Wenn ein Fehler kommt, dann schau mal [hier](http://hilfe.de)
 
                 <section>
                     <h2>War mir zu schnell!</h2>
-                    <a href="https://jugendhackt.github.io/git-talk/">jugendhackt.github.io/git-talk/</a>
+                    <a href="https://github.com/dmies/git-talk">https://github.com/dmies/git-talk</a>
                 </section>
 
                 <section>
                     <h1>happy hacking</h1>
                 </section>
 
-                <!-- END OF SLIDES -->
             </div>
 
         </div>
