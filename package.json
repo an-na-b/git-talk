@@ -9,16 +9,15 @@
     "start": "grunt serve"
   },
   "author": {
-    "name": "Daniel Mies",
-    "email": "daniel.mies@codecentric.de",
-    "web": "http://hakim.se"
+    "name": "Anna Backs",
+    "email": "anna.backs@codecentric.de"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/dmies/git-talk.git"
+    "url": "git://github.com/an-na-b/git-talk"
   },
   "engines": {
-    "node": "~4.1.1"
+    "node": "~9.5.0"
   },
   "dependencies": {
     "express": "~4.13.3",
