@@ -1,248 +1,264 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 
-        <title>Jugendhackt West - Github</title>
+    <title>Jugendhackt West - Github</title>
 
-        <meta name="description" content="Einf&uuml;hrung in Github">
-        <meta name="author" content="Daniel Mies">
+    <meta name="description" content="Einf&uuml;hrung in Github">
+    <meta name="author" content="Daniel Mies">
 
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-        <link rel="stylesheet" href="css/reveal.css">
-        <link rel="stylesheet" href="css/theme/white.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css" id="theme">
 
-        <!-- Code syntax highlighting -->
-        <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-        <!-- Printing and PDF exports -->
-        <script>
-         var link = document.createElement( 'link' );
-         link.rel = 'stylesheet';
-         link.type = 'text/css';
-         link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-         document.getElementsByTagName( 'head' )[0].appendChild( link );
-        </script>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
 
-        <!--[if lt IE 9]>
-        <script src="lib/js/html5shiv.js"></script>
-        <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
 
-        <!-- custom styles -->
-        <link rel="stylesheet" href="custom/css/style.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" href="custom/css/style.css">
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-        <div class="reveal">
+<div class="reveal">
 
-            <div class="slides">
-                <!-- BEGIN OF SLIDES -->
+    <div class="slides">
+        <!-- BEGIN OF SLIDES -->
 
-                <section>
-                    <img class="none-border" data-src="images/jugendhackt-logo.png" width="170">
-                    <h1>Github</h1>
-                    <h3>Gemeinsam mit Code die Welt verbessern</h3>
-                    <p>
-                        <small>Anna Backs <a href="https://github.com/dmies">github.com/an-na-b</a></small>
-                    </p>
-                </section>
+        <section>
+            <img class="none-border" data-src="images/jugendhackt-logo.png" width="170">
+            <h1>Github</h1>
+            <h3>Gemeinsam mit Code die Welt verbessern</h3>
+            <p>
+                <small>Anna Backs -<a href="https://github.com/an-na-b">github.com/an-na-b</a></small>
+            </p>
+        </section>
 
-                <section>
-                    <h2>Was ist Github?</h2>
-                    <ul>
-                        <li class="fragment">Möglichkeit gemeinsam an Code zu arbeiten</li>
-                        <li class="fragment">Soziales Netzwerk</li>
-                        <li class="fragment">Webhoster für Git</li>
-                    </ul>
-                </section>
+        <section>
+            <h2>Was ist Github?</h2>
+            <ul>
+                <li class="fragment">Möglichkeit gemeinsam an Code zu arbeiten</li>
+                <li class="fragment">Soziales Netzwerk</li>
+                <li class="fragment">Webhoster für Git</li>
+            </ul>
+        </section>
 
-                <section>
-                    <h3>Wer ist so auf GitHub?</h3>
-                    <ul>
-                        <li><a href="https://github.com/twbs/bootstrap">twbs/bootstrap</a></li>
-                        <li><a href="https://github.com/nodejs/node">nodejs/node</a></li>
-                        <li><a href="https://github.com/jquery/jquery">jquery/jquery</a></li>
-                        <li><a href="https://github.com/rails/rails">rails/rails</a></li>
-                        <li><a href="https://github.com/facebook/react">facebook/react</a></li>
-                        <li><a href="https://github.com/django/django">django/django</a></li>
-                        <li><a href="https://github.com/angular/angular.js">angular/angular.js</a></li>
-                    </ul>
-                </section>
+        <section>
+            <h3>Wer ist so auf GitHub?</h3>
+            <ul>
+                <li><a href="https://github.com/twbs/bootstrap">twbs/bootstrap</a></li>
+                <li><a href="https://github.com/nodejs/node">nodejs/node</a></li>
+                <li><a href="https://github.com/jquery/jquery">jquery/jquery</a></li>
+                <li><a href="https://github.com/rails/rails">rails/rails</a></li>
+                <li><a href="https://github.com/facebook/react">facebook/react</a></li>
+                <li><a href="https://github.com/django/django">django/django</a></li>
+                <li><a href="https://github.com/angular/angular.js">angular/angular.js</a></li>
+                <li>...</li>
+            </ul>
+        </section>
 
-                <section>
-                    <h2>Warte... Was ist Git?</h2>
-                    <ul>
-                        <li class="fragment">Versionsverwaltung für Dateien</li>
-                        <li class="fragment">Strg-Z für Profis</li>
-                    </ul>
-                </section>
+        <section>
+            <h2>Warte... Was ist Git?</h2>
+            <ul>
+                <li class="fragment">Versionsverwaltung für Dateien</li>
+                <li class="fragment">Strg-Z für Profis</li>
+            </ul>
+        </section>
 
-                <section>
-                    <h2>Was heißt Versionsverwaltung?</h2>
-                    <img class="none-border" data-src="images/versionierung.png">
-                </section>
+        <section>
+            <h2>Was heißt Versionsverwaltung?</h2>
+            <img class="none-border" data-src="images/versionierung.png">
+        </section>
 
 
-                <section>
-                  <h2>Installation</h2>
+        <section>
+            <h2>Installation</h2>
 
-                  <ul>
-                    <li><a href="https://git-scm.com/download/win">Windows</a></li>
-                    <li><a href="https://git-scm.com/download/mac">Mac OSX</a></li>
-                    <li>Linux - Wie immer im Paket-Manager ;)</li>
-                  </ul>
-                </section>
+            <ul>
+                <li><a href="https://git-scm.com/download/win">Windows</a></li>
+                <li><a href="https://git-scm.com/download/mac">Mac OSX</a></li>
+                <li>Linux - Wie immer im Paket-Manager ;)</li>
+            </ul>
+        </section>
 
-                <section>
-                  <h2>Ein Repository erstellen</h2>
-                  <p>
-                    In dem Verzeichnis, welches Du mit git verwalten möchtest, <code class="shell" data-trim>git init</code> ausführen.
-                  </p>
+        <section>
+            <h2>Ein Repository erstellen</h2>
+            <p>
+                Auf Github ein Repository erstellen (lassen)
+            </p>
+            <p>
+                In dem Verzeichnis, welches Du mit git verwalten möchtest, <code class="shell" data-trim>git init</code>
+                ausführen
+            </p>
+            <p>
+                Danach <code class="shell" data-trim>git remote add origin /pfad/zum/repository</code> ausführen, um das
+                Repository dem JugendHackt-github hinzuzufügen
+            </p>
+            <p>
+                Nun noch Dateien pushen mit <code class="shell" data-trim>git push -u origin master</code>
+            </p>
 
-                </section>
+        </section>
 
-                <section>
-                  <h2>Ein Repository auschecken</h2>
-                  <p>
-                    Du kannst ein Repository auschecken, welches in einem Ordner liegt
-                  </p>
-                  <pre><code class="shell" data-trim>
+        <section>
+            <h2>Ein Repository auschecken</h2>
+            <pre><code class="shell" data-trim>
 $ git clone /pfad/zum/repository
                   </code></pre>
-                  <p>
-                    Oder ein Repository auch direkt auschecken
-                  </p>
-                  <pre><code class="shell" data-trim>
+            <p>
+                Oder
+            </p>
+            <pre><code class="shell" data-trim>
 $ git clone benutzername@host:/pfad/zum/repository
                   </code></pre>
-                </section>
+        </section>
 
 
-                <section>
-                  <h2>Workflow</h2>
-                  <div class="fragment">
-                    <p>
-                      Wenn Du Dateien geändert hast, musst Du diese zunächst zum <b>Index</b> hinzufügen damit git diese verwaltet
-                    </p>
-                    <pre><code class="shell" data-trim>
+        <section>
+            <h2>Workflow</h2>
+            <div class="fragment">
+                <p>
+                    Geänderte Dateien hinzufügen
+                </p>
+                <pre><code class="shell" data-trim>
 $ git add meine-datei.txt
-$ git add *
+$ git add .
                     </code></pre>
-                  </div>
-                  <div class="fragment">
-                    <p>
-                      Danach kannst Du die Datei(en) zum <b>HEAD</b> hinzufügen (quasi die Änderung bestätigen):
-                    </p>
-                    <pre><code class="shell" data-trim>
+            </div>
+            <div class="fragment">
+                <p>
+                    Commit mit Nachricht abschließen
+                </p>
+                <pre><code class="shell" data-trim>
 $ git commit -m "meine commit Nachricht"
                     </code></pre>
-                    </div>
-                  <div class="fragment">
-                    <p>
-                      Zu einem Commit gehört <b>immer</b> eine Nachricht in der die Änderungen kurz beschrieben werden.
-                    </p>
-                  </div>
-                </section>
-
-                <section>
-                  <h2>Änderungen hochlden</h2>
-                  <p>
-                    Damit auch andere Deine Änderungen sehen und bearbeiten können, musst Du sie nur noch hochladen:
-                  </p>
-                  <pre><code class="shell" data-trim>
+            </div>
+            <div>
+                Veränderungen auf den Server laden
+            </div>
+            </p>
+            <pre><code class="shell" data-trim>
 $ git push origin master
                   </code></pre>
-                  <p class="fragment">
-                    Was <i>origin</i> und <i>master</i> bedeuten, sehen wir uns später noch an. :-)
-                  </p>
-                </section>
 
-                <section>
-                  <h2>Änderungen aus dem Repository laden</h2>
-                  <p>
-                    Wenn Du alle Änderungen laden möchtest, musst Du diese <i>pullen</i>
-                  </p>
-                  <pre><code class="shell" data-trim>
+        </section>
+
+        <section>
+            <h2>WICHTIG!</h2>
+            <p>
+                Um den aktuellen Stand zu bekommen
+            </p>
+            <pre><code class="shell" data-trim>
 $ git pull
                   </code></pre>
-                  <p class="fragment">
-                    Bevor ihr etwas pusht, solltet ihr immer vorher pullen. Sonst kann es zu Konflikten kommen.
-                  </p>
-                </section>
+        </section>
 
-                <section>
-                    <h2>Nützlich</h2>
+        <section>
+            <h2>Nützlich</h2>
 
-                    <p>
-                        Stand des lokalen Repos einsehen
-                    </p>
-                    <pre><code class="shell" data-trim>
+            <p>
+                Stand des lokalen Repos einsehen
+            </p>
+            <pre><code class="shell" data-trim>
 $ git status
                     </code></pre>
 
-                </section>
+        </section>
 
-                <section>
-                    <h2>Git kann noch viel mehr</h2>
+        <section>
+            <h2>Git kann noch viel mehr</h2>
 
-                    <p>Anfänger:
-                        <a href="https://rogerdudler.github.io/git-guide/index.de.html">git - Der einfache Einstieg</a>
-                    </p>
-                    <p>Fortgeschrittene:
-                        <a href="https://git-scm.com/book/de/v1/Git-Branching-Einfaches-Branching-und-Merging">Git Branching</a>
-                    </p>
-                    <p>Profi:
-                        <a href="http://nvie.com/posts/a-successful-git-branching-model/">A successful git branching model (englisch)</a>
-                    </p>
-                </section>
+            <p>Anfänger:
+                <a href="https://rogerdudler.github.io/git-guide/index.de.html">git - Der einfache Einstieg</a>
+            </p>
+            <p>Fortgeschrittene:
+                <a href="https://git-scm.com/book/de/v1/Git-Branching-Einfaches-Branching-und-Merging">Git Branching</a>
+            </p>
+            <p>Profi:
+                <a href="http://nvie.com/posts/a-successful-git-branching-model/">A successful git branching model
+                    (englisch)</a>
+            </p>
+        </section>
 
-                <section>
-                    <h2>War mir zu schnell!</h2>
-                    <a href="https://github.com/dmies/git-talk">https://github.com/dmies/git-talk</a>
-                </section>
+        <section>
+            <h2>War mir zu schnell!</h2>
+            <a href="https://an-na-b.github.io/git-talk/">https://github.com/dmies/git-talk</a>
+        </section>
 
-                <section>
-                    <h1>happy hacking</h1>
-                </section>
+        <section>
+            <h1>happy hacking</h1>
+        </section>
 
-            </div>
+    </div>
 
-        </div>
+</div>
 
-        <script src="lib/js/head.min.js"></script>
-        <script src="js/reveal.js"></script>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 
-        <script>
+<script>
 
-         // Full list of configuration options available at:
-         // https://github.com/hakimel/reveal.js#configuration
-         Reveal.initialize({
-             controls: true,
-             progress: true,
-             history: true,
-             center: true,
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
 
-             transition: 'slide', // none/fade/slide/convex/concave/zoom
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-             // Optional reveal.js plugins
-             dependencies: [
-                 { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-                 { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                 { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                 { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-                 { src: 'plugin/zoom-js/zoom.js', async: true },
-                 { src: 'plugin/notes/notes.js', async: true }
-             ]
-         });
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'lib/js/classList.js', condition: function () {
+                    return !document.body.classList;
+                }
+            },
+            {
+                src: 'plugin/markdown/marked.js', condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            },
+            {
+                src: 'plugin/markdown/markdown.js', condition: function () {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            },
+            {
+                src: 'plugin/highlight/highlight.js', async: true, condition: function () {
+                    return !!document.querySelector('pre code');
+                }, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            },
+            {src: 'plugin/zoom-js/zoom.js', async: true},
+            {src: 'plugin/notes/notes.js', async: true}
+        ]
+    });
 
-        </script>
+</script>
 
-    </body>
+</body>
 </html>
